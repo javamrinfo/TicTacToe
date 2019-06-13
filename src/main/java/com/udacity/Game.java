@@ -156,7 +156,7 @@ public class Game {
     public String checkGameWinner(char [][]grid){
         String result = "None";
         Character[] symbol = {'x','o'};
-        String [] message = {"X wygrywa", "O wygrywa"};
+        String [] message = {"X wins", "O wins"};
 
 
         // szukam kombinacji   ktore daja  zwyciestwo w dwoch obrotach petli czyli  dla symbolu  x i  o
@@ -189,7 +189,7 @@ public class Game {
             }
         }
         if(total == grid.length * grid.length)
-            return "remis";
+            return "tie";
 
 
         return result;
